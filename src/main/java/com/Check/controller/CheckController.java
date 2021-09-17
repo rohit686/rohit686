@@ -33,5 +33,9 @@ public class CheckController {
         ResponseModel<UserEntity,String> responseModel = new ResponseModel<>(userService.saveUser(userEntity),"sucessfull");
         return new ResponseEntity<>(responseModel,HttpStatus.FOUND);
     }
-    //add method hello
+
+    @GetMapping(path = "/hello", produces = "application/json")
+    public String sayHello(){
+        return "i told you hello";
+    }
 }
