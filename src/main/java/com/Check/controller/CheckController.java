@@ -33,4 +33,5 @@ public class CheckController {
         ResponseModel<UserEntity,String> responseModel = new ResponseModel<>(userService.saveUser(userEntity),"sucessfull");
         return new ResponseEntity<>(responseModel,HttpStatus.FOUND);
     }
+    //add method hello
 }
