@@ -36,6 +36,6 @@ public class CheckController {
 
     @GetMapping(path = "/hello", produces = "application/json")
     public String sayHello(){
-        return "i told you hello";
+        return "i told you hello0000";
     }
 }
